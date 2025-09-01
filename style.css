@@ -1,0 +1,17 @@
+/* ------------------------------
+   RESET + BASE
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top, #2a003f, #0d0d1a 70%);
+  color: #fff;
+}
