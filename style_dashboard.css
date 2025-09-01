@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.sidebar {
+  width: 220px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 24px 14px;
+  min-height: 100vh;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar h2 {
+  margin: 0 0 25px 0;
+  font-size: 27px;
+  color: #ffffff;
+}
+.sidebar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar nav ul li {
+  padding: 10px 10px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar nav ul li.active,
+.sidebar nav ul li:hover {
+  background: #ffffff;
+  color: rgb(75, 45, 95);
+  font-weight: bold;
+}
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: auto;
+  margin-bottom: 18px;
+}
+.profile-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px #e3e8ee;
+}
+.profile-card .profile-name {
+  font-weight: bold;
+  font-size: 15px;
+}
+.profile-card .profile-role {
+  font-size: 13px;
+  color: #8497b0;
+}
+main {
+  margin-left: 220px;
+  padding: 36px 42px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.btn-primary {
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  background: linear-gradient(90deg, #ff007f, #7700ff);
+  color: #fff;
+  margin: 10px;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(119, 0, 255, 0.4);
+}
+
+/* ------------------------------
+   SINGLE CARD
+------------------------------ */
+.card {
+  min-width: 100%; /* ensures one card fills container */
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px;
+  height: 35vh;
+  margin: 15px;
+}
+
+/* Circle Image Placeholder */
+.circle-placeholder {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #111;
+  flex-shrink: 0;
+}
+
+/* Text Block */
+.card-content {
+  max-width: 600px;
+}
+.card-content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.card-content p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ------------------------------
+   BUTTONS INSIDE CARD
+------------------------------ */
+.card-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card-actions button {
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #c00ac0;
+  box-shadow: 0 0 20px rgba(142, 9, 178, 0.701);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-group {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #222;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn.active {
+  background: #007bff;
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff007f, #7700ff);
+  color: #fff;
+}
